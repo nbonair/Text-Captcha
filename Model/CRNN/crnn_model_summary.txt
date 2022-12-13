@@ -1,0 +1,50 @@
+Model: "ocr_model_v1"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_data (InputLayer)        [(None, 200, 50, 1)  0           []                               
+                                ]                                                                 
+                                                                                                  
+ Conv1 (Conv2D)                 (None, 200, 50, 32)  320         ['input_data[0][0]']             
+                                                                                                  
+ pool1 (MaxPooling2D)           (None, 100, 25, 32)  0           ['Conv1[0][0]']                  
+                                                                                                  
+ Conv2 (Conv2D)                 (None, 100, 25, 64)  18496       ['pool1[0][0]']                  
+                                                                                                  
+ pool2 (MaxPooling2D)           (None, 50, 12, 64)   0           ['Conv2[0][0]']                  
+                                                                                                  
+ Conv3 (Conv2D)                 (None, 50, 12, 128)  73856       ['pool2[0][0]']                  
+                                                                                                  
+ dropout_2 (Dropout)            (None, 50, 12, 128)  0           ['Conv3[0][0]']                  
+                                                                                                  
+ pool3 (MaxPooling2D)           (None, 25, 6, 128)   0           ['dropout_2[0][0]']              
+                                                                                                  
+ reshape (Reshape)              (None, 25, 768)      0           ['pool3[0][0]']                  
+                                                                                                  
+ dense_1 (Dense)                (None, 25, 128)      98432       ['reshape[0][0]']                
+                                                                                                  
+ dense_2 (Dense)                (None, 25, 64)       8256        ['dense_1[0][0]']                
+                                                                                                  
+ dropout_3 (Dropout)            (None, 25, 64)       0           ['dense_2[0][0]']                
+                                                                                                  
+ cnn_encoder (Dense)            (None, 25, 64)       4160        ['dropout_3[0][0]']              
+                                                                                                  
+ dropout_4 (Dropout)            (None, 25, 64)       0           ['cnn_encoder[0][0]']            
+                                                                                                  
+ bidirectional (Bidirectional)  (None, 25, 256)      197632      ['dropout_4[0][0]']              
+                                                                                                  
+ bidirectional_1 (Bidirectional  (None, 25, 128)     164352      ['bidirectional[0][0]']          
+ )                                                                                                
+                                                                                                  
+ input_label (InputLayer)       [(None, 5)]          0           []                               
+                                                                                                  
+ pred (Dense)                   (None, 25, 63)       8127        ['bidirectional_1[0][0]']        
+                                                                                                  
+ ctc_loss (CTCLayer)            (None, 1)            0           ['input_label[0][0]',            
+                                                                  'pred[0][0]']                   
+                                                                                                  
+==================================================================================================
+Total params: 573,631
+Trainable params: 573,631
+Non-trainable params: 0
+__________________________________________________________________________________________________
