@@ -2,7 +2,7 @@
 ## This folder include functions used to process raw input dataset
 1. parameter_initialization.py
 Initialize images size, list of possible characters and dictionary for text - numerical labels
-3. raw_data_process.py //
+2. raw_data_process.py //
 Use dataset path as input. Split data into 2 lists: images dir and corresponding label //
 3. image_processing.py //
 Input: images path and labels //
