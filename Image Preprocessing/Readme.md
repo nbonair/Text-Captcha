@@ -9,3 +9,5 @@ Input: images path and labels
 Output: Images in normalized vector and numerical labels. Dataset now is ready to be used by any neuron network
 ### 4. main.py
 Get processed data and split into train-test dataset
+### 5. data_visualization.py
+Visualize data for testing purpose
