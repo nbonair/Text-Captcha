@@ -1,0 +1,35 @@
+Model: "CNN_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_data (InputLayer)     [(None, 200, 50, 1)]      0         
+                                                                 
+ Conv1 (Conv2D)              (None, 200, 50, 32)       320       
+                                                                 
+ pool1 (MaxPooling2D)        (None, 100, 25, 32)       0         
+                                                                 
+ Conv2 (Conv2D)              (None, 100, 25, 64)       18496     
+                                                                 
+ pool2 (MaxPooling2D)        (None, 50, 12, 64)        0         
+                                                                 
+ Conv3 (Conv2D)              (None, 50, 12, 120)       69240     
+                                                                 
+ dropout (Dropout)           (None, 50, 12, 120)       0         
+                                                                 
+ pool3 (MaxPooling2D)        (None, 25, 6, 120)        0         
+                                                                 
+ reshape (Reshape)           (None, 5, 3600)           0         
+                                                                 
+ dense_1 (Dense)             (None, 5, 256)            921856    
+                                                                 
+ dropout_1 (Dropout)         (None, 5, 256)            0         
+                                                                 
+ dense_2 (Dense)             (None, 5, 128)            32896     
+                                                                 
+ CNN_output (Dense)          (None, 5, 62)             7998      
+                                                                 
+=================================================================
+Total params: 1,050,806
+Trainable params: 1,050,806
+Non-trainable params: 0
+_________________________________________________________________
