@@ -13,6 +13,8 @@ To facilitate the future development, we breakdown the notebook into different m
 3. Pretrained Model: Trained model extracted in .tf file. Using ``tf.keras.models.load_model('dir_to_model')``` to load the model for further training or development
 4. Dataset: Current dataset resources 
 
+## Environment and Library Setup
+---
 ## Future Plan
 ---
 ### Application Development
