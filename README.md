@@ -14,7 +14,10 @@ To facilitate the future development, we breakdown the notebook into different m
 4. Dataset: Current dataset resources 
 
 ## Environment and Library Setup 
-   
+- Tensorflow
+- Keras
+- opencv
+- numpy
 ## Future Plan
    
 ### -  Application Development
