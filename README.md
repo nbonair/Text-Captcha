@@ -17,11 +17,11 @@ To facilitate the future development, we breakdown the notebook into different m
    
 ## Future Plan
    
-### Application Development
+### -  Application Development
 - Develop program using current model to break user's input CAPTCHA
 - Improve image processing module
 - Integrate to company pipeline
-### R&D
+### - R&D
 - Expand training dataset with more complicated CAPTCHA
 - Complete training and evaluating phase to release final model for our application
 - Further research and development for new features in OCR
