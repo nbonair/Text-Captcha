@@ -6,6 +6,8 @@ Our current CRNN approach is evaluated by a grayscale CAPTCHA dataset, which pro
 
 ## Project Progress
 ---
+This project is still under early R&D phases. Currently, we have created a simple image-processing module for raw data and a CRNN model to extract the captchas into text format. The whole program could be accessed from [Text_captcha.ipynb](https://github.com/nbonair/Text-Captcha/blob/main/Text_captcha_CNN.ipynb) 
+
 ## Future Plan
 ---
 ## Research Resources
