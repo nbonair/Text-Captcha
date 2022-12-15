@@ -27,4 +27,8 @@ To facilitate the future development, we breakdown the notebook into different m
 ---
 ## Model Overview
 ### 1. CNN
+![image](https://user-images.githubusercontent.com/86250240/207933521-28f9877a-4567-4ebf-ae4f-f615e5baed4f.png)
+
 ### 2. CRNN
+![image](https://user-images.githubusercontent.com/86250240/207933555-e473cde8-6048-4dff-8736-159d8b4c39ee.png)
+
