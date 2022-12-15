@@ -1,11 +1,11 @@
 # Text-Captcha
-## Executive Summary
---
+## Executive Summary   
+
 This text stream is aiming to develop a fully functional program for breaking text CAPTCHAs. The program is based on Artificial Intelligence technologies to automatically extract the text from the captcha image with high noise level and complicated background.   
 Our current CRNN approach is evaluated by a grayscale CAPTCHA dataset, which provides promising result with high accuracy rate. Future development will focus on expanding training dataset for current model and developing a program to breaking input CAPTCHA from users.
 
-## Project Progress
----
+## Project Progress   
+
 This project is still under early R&D phases. Currently, we have created a simple image-processing module for raw data and a CRNN model to extract the captchas into text format. The whole program could be accessed from [Text_captcha.ipynb](https://github.com/nbonair/Text-Captcha/blob/main/Text_captcha_CNN.ipynb)   
 To facilitate the future development, we breakdown the notebook into different module. The details guidance is included in each module folder:
 1. Image Preprocessing: Processing raw image data into model-compatible input and labels
@@ -13,10 +13,10 @@ To facilitate the future development, we breakdown the notebook into different m
 3. Pretrained Model: Trained model extracted in .tf file. Using ``tf.keras.models.load_model('dir_to_model')``` to load the model for further training or development
 4. Dataset: Current dataset resources 
 
-## Environment and Library Setup
----
+## Environment and Library Setup 
+   
 ## Future Plan
----
+   
 ### Application Development
 - Develop program using current model to break user's input CAPTCHA
 - Improve image processing module
